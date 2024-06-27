@@ -24,7 +24,7 @@ Installation
 
 ============
 
-Either download the whole repo as a [zip file] or just download the bash script using:
+Either download the file
 
 ```sh
 curl -O https://raw.githubusercontent.com/njh/sonoff-ota-flash-cli/main/sonoff-ota-flash.sh
