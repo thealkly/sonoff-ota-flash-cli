@@ -5,9 +5,11 @@ A Bash script to perform an OTA (Over the Air) firmware update for [Sonoff DIY] 
 The script will install [Tasmota] by default - unless you tell it to install something different.
 
 Modules that support the DIY Mode Protocol v2.0 (firmware 3.5.0 or higher):
-* [Sonoff Basic R3](https://sonoff.tech/product/wifi-diy-smart-switches/basicr3)
-* [Sonoff RF R3](https://sonoff.tech/product/wifi-smart-wall-swithes/rfr3)
-* [Sonoff Mini](https://sonoff.tech/product/wifi-diy-smart-switches/sonoff-mini)
+* [Sonoff Basic R3]
+* [Sonoff RF R3]
+* [Sonoff Mini]
+
+Whit this fork, I adopted the skript to flash Sonoff Mini R2 ( https://amzn.to/3L0FpbV (* Affiliate Link) )  with the Firmware 3.7.6. 
 
 What this script does:
 
@@ -17,8 +19,9 @@ What this script does:
 * Uses the `ota_unlock` endpoint to unlock the module for Over The Air updates
 * Uses the `ota_flash` endpoint to flash the module with Tasmota.
 
-
+All links marked with "*" are related to Amazon affiliate programs. They serve you as a potential buyer as an orientation and refer explicitly to certain products. If these links are used, a commission can be paid to me in case of a purchase decision. In case of a purchase via these links, there are of course no additional costs. Thank you!!
 Installation
+
 ============
 
 Either download the whole repo as a [zip file] or just download the bash script using:
@@ -82,9 +85,8 @@ The sonoff-ota-flash.sh script has been tested with the following operating syst
 
 | OS                   | Working | Notes                        |
 |----------------------|---------|------------------------------|
-| Mac OS 12.3.1        |   ✅    | dns-sd/1558.0.56 curl/7.79.1 |
-| Raspberry Pi OS 11.3 |   ✅    | avahi-browse/0.8 curl/7.74.0 | 
-| Windows 10           |   ❌    | Likely problems with Multicast DNS for device discovery? |
+| Mac OS 14.2 ARM       |   ✅    | dns-sd/1558.0.56 curl/7.79.1 |
+
 
 It is possible that it may work on other OS too.
 If you have success on another OS, please raise a Pull Request with the details, to let other people know.
@@ -181,7 +183,7 @@ See the file LICENSE for details.
 Contact
 -------
 
-* Author:    Nicholas J Humfrey
+* Author of original Branch:    Nicholas J Humfrey
 * Twitter:   [@njh]
 
 
