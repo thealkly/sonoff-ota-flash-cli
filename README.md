@@ -14,6 +14,7 @@ Whit this fork, I adopted the skript to flash Sonoff Mini R2 ( https://amzn.to/3
 What this script does:
 
 * Uses multicast DNS to find the name of the module on the local network
+* For Firmware 3.7.6 look up the DeviceID based on the name
 * Looks up the IP address for the module
 * Uses the `info` endpoint to display some JSON about the module
 * Uses the `ota_unlock` endpoint to unlock the module for Over The Air updates
