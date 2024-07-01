@@ -173,15 +173,25 @@ You can then connect to the Tasmota Wifi network and configure it to use your ma
 Jump to the [Configure Wifi](https://tasmota.github.io/docs/Getting-Started/#configure-wi-fi) section
 in the Tasmota Getting Started Guide for details.
 
-Configuration of Tasmota
+Configuration of Tasmota & Home Assistant
 -------
+
+Click on "Firmware Upgrade" in the Tasmota interface.
+
+Change the OTA (Over-The-Air) URL to: 
+``` http://ota.tasmota.com/tasmota/release/tasmota-lite.bin.gz ```
+Important: Make sure to use the "-lite" version of the URL. The Tasmota MINI doesn't have sufficient memory for the full Tasmota binary.
+Completion: After the upgrade process finishes, your browser should refresh automatically, and you will see Tasmota 11.0.0 displayed at the bottom of the page.
+
+Home Assistant Auto Discovery needs the upgraded Tasmota in order to work!
+
 Set Up Tasmota for Proper Operation with the MINI (Toggle Switch)
 
 To enable the physical toggle switch on the MINI:
 
 In Tasmota, select "Configure" and then "Configure Other".
 In the Template field, enter the following line:
-{"NAME":"Sonoff MINIR2","GPIO":[17,0,0,0,9,0,0,0,21,157,0,0,0],"FLAG":0,"BASE":1}
+``` {"NAME":"Sonoff MINIR2","GPIO":[17,0,0,0,9,0,0,0,21,157,0,0,0],"FLAG":0,"BASE":1} ```
 Check "Activate"
 press ave
 done!
@@ -199,7 +209,7 @@ Contact
 -------
 
 * Author of original Branch:    Nicholas J Humfrey
-* Twitter:   [@njh]
+* Modified by Alkly alkly.de 
 
 
 
