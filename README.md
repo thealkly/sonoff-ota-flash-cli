@@ -181,7 +181,7 @@ Click on "Firmware Upgrade" in the Tasmota interface.
 Change the OTA (Over-The-Air) URL to: 
 ``` http://ota.tasmota.com/tasmota/release/tasmota-lite.bin.gz ```
 Important: Make sure to use the "-lite" version of the URL. The Tasmota MINI doesn't have sufficient memory for the full Tasmota binary.
-Completion: After the upgrade process finishes, your browser should refresh automatically, and you will see Tasmota 11.0.0 displayed at the bottom of the page.
+Completion: After the upgrade process finishes, your browser should refresh automatically, and you will see Tasmota 14.0.0 or newer displayed at the bottom of the page.
 
 Home Assistant Auto Discovery needs the upgraded Tasmota in order to work!
 
